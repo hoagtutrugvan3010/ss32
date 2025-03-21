@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" name="mon" id="mon" placeholder="nhap ten mon hoc">
+    <button onclick="addsubject()">them mon hoc</button>
+
+    <ol id="list">
+        <li>toan</li>
+        <li>Ly</li>
+        <li>Hoa</li>
+    </ol>
+
+    <script>
+        function addsubject() {
+            let input = document.getElementById('mon')
+            let subjectName = input.value.trim()
+            if (subjectName === ' ') {
+                alert('ten mon hoc k dc de trong')
+            } else {
+                let li = document.createElement('li')
+                li.textContent = subjectName;
+                document.getElementById('list').appendChild(li)
+                input.value = ''
+            }
+        }
+    </script>
+</body>
+
+</html>

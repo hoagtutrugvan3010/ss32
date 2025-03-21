@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./b4ss32.css">
+</head>
+<body>
+    <input type="email" id="inputEmail" placeholder="abc@gmail.com">
+    <div id="divEmail"></div>
+    <button onclick="checkEmail()">check</button>
+    <script>
+        function checkEmail(){
+            let input = document.getElementById('inputEmail').value.trim()
+            let div = document.getElementById('divEmail')
+            let checked = /@.+\.(com|vn)$/i
+
+            if (checked.test(input)){
+                div.innerHTML = "email hop le"
+                div.className = "xanh"
+            }else{
+                div.innerHTML = "email ko hop le"
+                div.className = "do"
+            }
+        }
+    </script>
+</body>
+</html>

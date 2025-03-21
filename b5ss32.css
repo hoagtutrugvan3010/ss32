@@ -1,0 +1,27 @@
+* {
+    text-align: center;
+}
+.total_container {
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 500px;
+    margin-left: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.container {
+    margin-top: 20px;
+}
+.container button {
+    background-color: green;
+}
+.total_container li {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+.total_container button {
+    background-color: red;
+    color: white;
+}

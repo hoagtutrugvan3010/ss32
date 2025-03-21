@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">bam vao tuiiiii</button>
+    <h1 id="count">so lan bam : 0</h1>
+    <script>
+        let btn = document.getElementById('btn')
+        let show = document.getElementById('count')
+        let count = 0
+        btn.onclick = function(){
+            count++
+            show.textContent = `so lan bam : ${count}`
+        }
+    </script>
+</body>
+</html>
