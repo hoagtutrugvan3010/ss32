@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./b6ss32.css">
 </head>
 <body>
-    
+    <p id="size">chu se thay doi kich thuoc khi bam nut</p>
+    <div><button class="cong" onclick="changeSize(2)">+</button><button class="tru" onclick="changeSize(-2)">-</button></div>
+
+
+    <script>
+        let Size = 10;
+        function changeSize(change) {
+            Size += change;
+            document.getElementById('size').style.fontSize = Size + 'px';
+        }
+    </script>
 </body>
 </html>
